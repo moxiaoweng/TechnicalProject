@@ -1,0 +1,20 @@
+#端口号
+server:
+  port: 8081
+
+#MySql配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/project?serverTimezone=UTC&charaterEncoding=utf-8
+    username: root
+    password: 123456
+
+#swagger
+swagger:
+  enabled: true
+
+#mybatis配置
+mybatis:
+  #解决Invalid bound statement (not found)异常
+  mapper-locations: classpath:mapper/*.xml
